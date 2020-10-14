@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
+	public static void main(String[] args){
 		if (args.length != 0 &&  !args[0].equals("")) {
 			Map<String, ArrayList<File>> files = new HashMap<>();
 			File f = new File(args[0]);
@@ -34,7 +34,7 @@ public class Main {
 						e.printStackTrace();
 					}
 				} else {
-					System.out.println("Erreur le fichier ne peut pas être lus");
+					System.out.println("Erreur le fichier ne peut pas Ãªtre lus");
 				}
 			} else {
 				System.out.println("The file is not a file, nor a directory");
