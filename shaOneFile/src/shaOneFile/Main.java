@@ -16,10 +16,8 @@ public class Main {
 		if (args.length != 0 &&  !args[0].equals("")) {
 			Map<String, ArrayList<File>> files = new HashMap<>();
 			File f = new File(args[0]);
-		//	recursiveSearch(f, files);
-			//System.out.println(files);
-			String zebi = (getFileContent(new File("C:\\Users\\Windows\\eclipse-workspace\\shaOneFile\\yeety\\test.txt")));
-			System.out.println(convertToShaOne(zebi));
+			recursiveSearch(f, files);
+			System.out.println(files);
 		}
 	}
 
@@ -36,7 +34,7 @@ public class Main {
 					}
 				else
 					System.out.println("Erreur le fichier ne peut pas être lus");
-			} else {
+			 else 
 				System.out.println("The file is not a file, nor a directory");
 		}
 	}
@@ -61,6 +59,6 @@ public class Main {
 		for (int i = 0; i < digest.length; i++) {
 			sb.append(Integer.toString(digest[i] & 0xFF | 0x100, 16).substring(1));
 		}
-		return shaone;
+		return sb.toString();
 	}
 }
