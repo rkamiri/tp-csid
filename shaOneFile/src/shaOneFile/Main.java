@@ -1,24 +1,25 @@
 package shaOneFile;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class Main {
 
-	public static void main(String[] args){
+	public static void main(String[] args) throws Exception{
 		if (args.length != 0 &&  !args[0].equals("")) {
 			Map<String, ArrayList<File>> files = new HashMap<>();
 			File f = new File(args[0]);
-			recursiveSearch(f, files);
-			System.out.println(files);
+		//	recursiveSearch(f, files);
+			//System.out.println(files);
+			String zebi = (getFileContent(new File("C:\\Users\\Windows\\eclipse-workspace\\shaOneFile\\yeety\\test.txt")));
+			System.out.println(convertToShaOne(zebi));
 		}
 	}
 
@@ -42,10 +43,9 @@ public class Main {
 		}
 	}
 
-	public static void treatment(File file, Map<String, ArrayList<File>> files)
-			throws NoSuchAlgorithmException, UnsupportedEncodingException, IOException {
+	public static void treatment(File file, Map<String, ArrayList<File>> files) throws Exception{
 		String tmpSha = convertToShaOne(getFileContent(file));
-		// The hash doesnt exist, we need to create one with it's list
+		// The hash does'nt exist, we need to create one with it's list
 		if (!files.containsKey(tmpSha)) {
 			files.put(tmpSha, new ArrayList<File>());
 			files.get(tmpSha).add(file);
@@ -57,33 +57,22 @@ public class Main {
 		}
 	}
 
-	public static String getFileContent(File f) throws IOException {
-		String content = "";
-		BufferedReader br = new BufferedReader(new FileReader(f));
-		boolean eof = false;
-		String actualLine = "";
-		while (!eof) {
-			actualLine = br.readLine();
-			if (actualLine != null) {
-				content += actualLine;
-			} else {
-				eof = true;
-			}
-		}
-		return content;
+	public static String getFileContent(File f) throws IOException{
+		return new String(Files.readAllBytes(Paths.get(f.getPath())));
 	}
 
 	/*
 	 * Convert a String into a SHA-1 HASH Return the SHA-1 has a hashed String
 	 */
-	public static String convertToShaOne(String input) throws NoSuchAlgorithmException, UnsupportedEncodingException {
+	public static String convertToShaOne(String input) throws Exception {
+		String shaone ="";
 		MessageDigest sha = MessageDigest.getInstance("SHA-1");
 		byte[] digest = sha.digest(input.getBytes("UTF-8"));
 		// say what one more time
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < digest.length; i++) {
-			sb.append(Integer.toHexString(digest[i] & 0xFF | 0x100).substring(1, 3));
+			shaone+= Integer.toString(digest[i] & 0xFF | 0x100, 16).substring(1);
 		}
-		return sb.toString();
+		return shaone;
 	}
 }
