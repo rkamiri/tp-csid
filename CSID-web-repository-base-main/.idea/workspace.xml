@@ -48,8 +48,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Users\Windows\Desktop\bordel iut\CSID-web-repository-base-main\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="fr.paris8univ.iut.csid.csidwebrepositorybase.core.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Users\Windows\Desktop\bordel iut\CSID-web-repository-base-main\src\main\java\fr\paris8univ\iut\csid\csidwebrepositorybase\core\dao\domain" />
@@ -60,8 +60,8 @@
       <recent name="fr.paris8univ.iut.csid.csidwebrepositorybase.core" />
       <recent name="fr.paris8univ.iut.csid.csidwebrepositorybase.core.dao" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="fr.paris8univ.iut.csid.csidwebrepositorybase.core.dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Windows\Desktop\bordel iut\CSID-web-repository-base-main\src\main\resources" />
     </key>
   </component>
   <component name="RunManager">
@@ -106,6 +106,7 @@
       <workItem from="1607671978498" duration="16655000" />
       <workItem from="1607692087623" duration="209000" />
       <workItem from="1607695709100" duration="427000" />
+      <workItem from="1607696591037" duration="141000" />
     </task>
     <servers />
   </component>

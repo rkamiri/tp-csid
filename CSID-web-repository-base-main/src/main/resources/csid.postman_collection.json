@@ -1,0 +1,308 @@
+{
+	"info": {
+		"_postman_id": "810ed36e-2542-4449-8f85-2898a8ee03c9",
+		"name": "csid",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Repos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/repositories/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repositories",
+						""
+					]
+				},
+				"description": "Get all"
+			},
+			"response": []
+		},
+		{
+			"name": "Post Repo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"test5\",\r\n        \"owner\": \"test8\",\r\n        \"issues\": 9,\r\n        \"pullRequest\": 5\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/repositories/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repositories",
+						""
+					]
+				},
+				"description": "Post"
+			},
+			"response": []
+		},
+		{
+			"name": "Obsolete Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"test6\",\r\n        \"owner\": \"test8\",\r\n        \"issues\": 9,\r\n        \"pullRequest\": 5\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/repositories/put/test5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repositories",
+						"put",
+						"test5"
+					]
+				},
+				"description": "Put test 6"
+			},
+			"response": []
+		},
+		{
+			"name": "Obsolete Patch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"test5\",\r\n        \"owner\": \"test8\",\r\n        \"issues\": 9,\r\n        \"pullRequest\": 5\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/repositories/test5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repositories",
+						"test5"
+					]
+				},
+				"description": "Post test2"
+			},
+			"response": []
+		},
+		{
+			"name": "Obsolete Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"test5\",\r\n        \"owner\": \"test8\",\r\n        \"issues\": 9,\r\n        \"pullRequest\": 5\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/repositories/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repositories",
+						""
+					]
+				},
+				"description": "delete\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Get RepoA from BD",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/repositories/repoTestA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repositories",
+						"repoTestA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get From Git API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/rkamiri/repoTestA",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"rkamiri",
+						"repoTestA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get stats forks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/repositories/repoTestA/stats?statsTypes=forks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repositories",
+						"repoTestA",
+						"stats"
+					],
+					"query": [
+						{
+							"key": "statsTypes",
+							"value": "forks"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get stats issues",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/repositories/repoTestA/stats?statsTypes=issues",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repositories",
+						"repoTestA",
+						"stats"
+					],
+					"query": [
+						{
+							"key": "statsTypes",
+							"value": "issues"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
