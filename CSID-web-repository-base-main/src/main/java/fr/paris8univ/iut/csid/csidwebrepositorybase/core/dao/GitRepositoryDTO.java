@@ -9,12 +9,14 @@ public class GitRepositoryDTO {
     private String login;
     private Integer open_issues;
     private Integer forks;
+    private String lastedit;
 
-    public GitRepositoryDTO(String name,String login, int open_issues,int forks) {
+    public GitRepositoryDTO(String name,String login, int open_issues,int forks, String lastedit) {
         this.name=name;
         this.login=login;
         this.open_issues=open_issues;
         this.forks=forks;
+        this.lastedit=lastedit;
     }
 
     public Integer getOpen_issues() {
@@ -48,4 +50,8 @@ public class GitRepositoryDTO {
     public void setLogin(String login) {
         this.login=login;
     }
+
+    public void setLastEdit(String lastedit){this.lastedit=lastedit;}
+
+    public String getLastEdit(){return this.lastedit;}
 }

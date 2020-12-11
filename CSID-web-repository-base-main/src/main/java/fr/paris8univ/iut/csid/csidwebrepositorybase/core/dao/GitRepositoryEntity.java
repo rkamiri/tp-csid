@@ -21,13 +21,17 @@ public class GitRepositoryEntity {
     @Column(name = "forks")
     private Integer forks;
 
+    @Column(name = "lastedit")
+    private String lastedit;
+
     public GitRepositoryEntity() {}
 
-    public GitRepositoryEntity(String name,String owner, Integer open_issues,Integer forks) {
+    public GitRepositoryEntity(String name,String owner, Integer open_issues,Integer forks, String lastedit) {
         this.name=name;
         this.owner=owner;
         this.open_issues=open_issues;
         this.forks=forks;
+        this.lastedit=lastedit;
     }
 
     public Integer getOpen_issues() {
@@ -61,4 +65,8 @@ public class GitRepositoryEntity {
     public void setOwner(String owner) {
         this.owner=owner;
     }
+
+    public void setLastEdit(String lastedit){this.lastedit=lastedit;}
+
+    public String getLastEdit(){return this.lastedit;}
 }

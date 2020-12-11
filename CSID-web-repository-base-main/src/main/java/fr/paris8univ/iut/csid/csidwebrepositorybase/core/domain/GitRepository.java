@@ -6,14 +6,16 @@ public class GitRepository {
 	private String owner;
 	private Integer open_issues;
 	private Integer forks;
+	private String lastedit;
 
 	public GitRepository() {}
 	
-	public GitRepository(String name,String owner, int open_issues,int forks) {
+	public GitRepository(String name,String owner, int open_issues,int forks, String lastedit) {
 		this.name=name;
 		this.owner=owner;
 		this.open_issues=open_issues;
 		this.forks=forks;
+		this.lastedit=lastedit;
 	}
 	
 	public Integer getOpen_issues() {
@@ -47,4 +49,8 @@ public class GitRepository {
 	public void setOwner(String owner) {
 		this.owner=owner;
 	}
+
+	public void setLastEdit(String lastedit){this.lastedit=lastedit;}
+
+	public String getLastEdit(){return this.lastedit;}
 }

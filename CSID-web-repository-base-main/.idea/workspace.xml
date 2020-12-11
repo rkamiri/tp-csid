@@ -41,31 +41,39 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="fr.paris8univ.iut.csid.csidwebrepositorybase.core.dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Windows\Desktop\bordel iut\CSID-web-repository-base-main\src\main\resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Users\Windows\Desktop\bordel iut\CSID-web-repository-base-main\src\main\java\fr\paris8univ\iut\csid\csidwebrepositorybase\core\dao\domain" />
       <recent name="D:\Users\Windows\Desktop\bordel iut\CSID-web-repository-base-main\src\main\java\fr\paris8univ\iut\csid\csidwebrepositorybase\core\gitRepo" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Users\Windows\Desktop\bordel iut\CSID-web-repository-base-main\src\main\resources" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fr.paris8univ.iut.csid.csidwebrepositorybase.core.domain" />
+      <recent name="fr.paris8univ.iut.csid.csidwebrepositorybase.core" />
+      <recent name="fr.paris8univ.iut.csid.csidwebrepositorybase.core.dao" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="fr.paris8univ.iut.csid.csidwebrepositorybase.core.dao" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,7 +115,8 @@
       <workItem from="1607604567896" duration="1345000" />
       <workItem from="1607609536462" duration="625000" />
       <workItem from="1607610205436" duration="615000" />
-      <workItem from="1607614957576" duration="8522000" />
+      <workItem from="1607614957576" duration="8822000" />
+      <workItem from="1607671978498" duration="16655000" />
     </task>
     <servers />
   </component>
@@ -131,10 +140,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1059" y="405" key="#com.intellij.ide.macro.MacrosDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1606463234209" />
-    <state x="1085" y="406" key="#com.intellij.ide.util.MemberChooser" timestamp="1605282014030">
+    <state x="1085" y="406" key="#com.intellij.ide.util.MemberChooser" timestamp="1607677838250">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1085" y="406" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605282014030" />
+    <state x="1085" y="406" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607677838250" />
     <state x="1009" y="490" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1606463224964">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -147,42 +156,46 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="735" y="624" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1606462844978" />
+    <state x="751" y="309" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607676890012">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="751" y="309" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607676890012" />
     <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1607605374833">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607605374833" />
-    <state width="2519" height="201" key="GridCell.Tab.0.bottom" timestamp="1607633397644">
+    <state width="2519" height="286" key="GridCell.Tab.0.bottom" timestamp="1607691479431">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="308" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1606474861384">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="308" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1606474861384" />
-    <state width="2519" height="201" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607633397644" />
-    <state width="2519" height="201" key="GridCell.Tab.0.center" timestamp="1607633397644">
+    <state width="2519" height="286" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607691479431" />
+    <state width="2519" height="286" key="GridCell.Tab.0.center" timestamp="1607691479431">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="308" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1606474861384">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="308" key="GridCell.Tab.0.center.inPresentationMode/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1606474861384" />
-    <state width="2519" height="201" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607633397644" />
-    <state width="2519" height="201" key="GridCell.Tab.0.left" timestamp="1607633397644">
+    <state width="2519" height="286" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607691479431" />
+    <state width="2519" height="286" key="GridCell.Tab.0.left" timestamp="1607691479431">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="308" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1606474861384">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="308" key="GridCell.Tab.0.left.inPresentationMode/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1606474861384" />
-    <state width="2519" height="201" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607633397644" />
-    <state width="2519" height="201" key="GridCell.Tab.0.right" timestamp="1607633397644">
+    <state width="2519" height="286" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607691479431" />
+    <state width="2519" height="286" key="GridCell.Tab.0.right" timestamp="1607691479431">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="308" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1606474861384">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="308" key="GridCell.Tab.0.right.inPresentationMode/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1606474861384" />
-    <state width="2519" height="201" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607633397644" />
+    <state width="2519" height="286" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607691479431" />
     <state width="2517" height="401" key="GridCell.Tab.1.bottom" timestamp="1605276671579">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -207,10 +220,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1606485716272" />
-    <state x="961" y="242" width="680" height="915" key="find.popup" timestamp="1607619281410">
+    <state x="961" y="242" width="729" height="915" key="find.popup" timestamp="1607689131850">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="961" y="242" width="680" height="915" key="find.popup/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607619281410" />
+    <state x="961" y="242" width="729" height="915" key="find.popup/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607689131850" />
     <state x="662" y="320" key="new project wizard" timestamp="1607623551645">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
